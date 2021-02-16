@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Seth Bolander's Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Seth Bolander's Portfolio">
+  <meta name="keywords" content="portfolio, projects, skills, software, development">
+  <meta name="author" content="Seth Bolander">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    /* START GENERAL STYLES + Styles Less than 600 PX */
+    .portfolioBuilder {
+      color: #333;
+      font-family: Lato, Arial, Helvetica, sans-serif;
+      margin: auto;
+      margin-top: 10px;
+      width: 85%;
+    }
+
+    .portfolioBuilder a {
+      text-decoration: none;
+      color: #333399
+    }
+
+    .portfolioBuilder a:hover {
+      color: blue;
+    }
+
+    .portfolioBuilder a:active {
+      color: blue;
+    }
+
+    .portfolioBuilder .centerContent * {
+      text-align: center;
+    }
+
+    .portfolioBuilder .myName {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .portfolioBuilder .profilePictureDiv {
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      display: block;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+
+    .portfolioBuilder .profilePictureDiv .profilePicture {
+      height: 100%;
+      max-width: auto;
+    }
+
+    .portfolioBuilder .photoDiv {
+      height: 200px;
+      width: 200px;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+
+    .portfolioBuilder .photoDiv img {
+      height: 100%;
+      width: auto;
+    }
+
+    .portfolioBuilder .pName {
+      font-size: 1.5em;
+      font-weight: bold;
+      display: inline;
+    }
+
+    .portfolioBuilder .pSkill {
+      font-size: 0.75em;
+      text-align: center;
+      color: #5b5b5b;
+      font-weight: bolder;
+      height: 30px;
+      min-width: 30px;
+      background-color: #e8e8e8;
+      padding: 5px;
+      border-radius: 10px;
+      display: inline-flex;
+      justify-content: left;
+      align-items: center;
+      margin: 3px;
+    }
+
+    /* END GENERAL STYLES + Styles Less than 600 PX */
+    /* START MEDIA QUERY 600-900 PX */
+    @media (min-width: 600px) {
+      .portfolioBuilder {
+        width: 500px;
+      }
+    }
+
+    /* END MEDIA QUERY 600-900 PX */
+    /* START MEDIA QUERY 900-1200 PX */
+    @media (min-width: 900px) {
+      .portfolioBuilder {
+        width: 800px;
+      }
+
+      .portfolioBuilder .project {
+        display: flex;
+      }
+
+      .portfolioBuilder .photoDiv {
+        margin: 10px;
+      }
+
+      .portfolioBuilder .contentDiv {
+        width: 70%;
+        margin: 10px;
+      }
+    }
+
+    /* END MEDIA QUERY 900-1200 PX */
+    /* START MEDIA QUERY 1200+ PX */
+    @media (min-width: 1200px) {
+      .portfolioBuilder {
+        width: 1100px;
+      }
+    }
+
+    /* END MEDIA QUERY 1200+ PX */
+  </style>
+</head>
+<!-- START BODY -->
+
+<body class="portfolioBuilder">
+  <!-- START INTRO DIV -->
+  <div id="intro" class="centerContent">
+    <div class="profilePictureDiv">
+      <a href="https://github.com/sbolande">
+        <img class="profilePicture"
+        src="https://avatars.githubusercontent.com/u/44790090?s=460&u=c974f13558dc3c245d5741b54274b2c74cb322a6&v=4">
+      </a>
+    </div>
+    <h2 class="myName">Seth Bolander</h2>
+    <div id="contacts">
+      <a href="https://github.com/sbolande">GitHub</a>, <a href="https://www.linkedin.com/in/seth-bolander-07577a179/">LinkedIn</a>, <a href="mailto:sbolande97@gmail.com">Gmail</a>
+    </div>
+    <hr>
+  </div>
+  <!-- END INTRO DIV -->
+  <!-- START PROJECTS DIV -->
+  <div id="projects" class="projects">
+    <div class="project">
+      <div class="photoDiv">
+        <a class="pLink" href="https://github.com/sbolande/canvas-token-fetcher#readme">
+          <img class="pPhoto"
+            src="https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png"
+            alt="Puppeteer">
+        </a>
+      </div>
+      <div class="contentDiv">
+        <div class="projectHeader">
+          <a class="pLink" href="https://github.com/sbolande/canvas-token-fetcher#readme">
+            <div class="pName">Canvas Token Fetcher</div>
+          </a><br>
+          <span class="pHours">25</span>&#xA0;hours,&#xA0;
+          <span class="pTimeframe">February 2021</span>
+        </div>
+        <div class="projectBody">
+          <p class="pDescription">
+            BYU-Idaho Hackathon Project Submission, Winter 2021. Fetch a new API token from Canvas&apos; admin login via
+            Puppeteer. Powered by Electron.
+          </p>
+        </div>
+        <div class="projectSkills">
+          <div class="pSkill"><a href="https://pptr.dev/">Puppeteer</a></div>
+          <div class="pSkill"><a href="https://www.electronjs.org/">Electron</a></div>
+          <div class="pSkill">JavaScript/ES2019</div>
+          <div class="pSkill">HTML</div>
+          <div class="pSkill">CSS</div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="project">
+      <div class="photoDiv">
+        <a class="pLink" href="https://github.com/sbolande/d2l-gradebook-csv-to-canvas-gradebook-csv#readme">
+          <img class="pPhoto"
+            src="https://www.instructure.com/sites/default/files/styles/small_hq/public/image/2021-02/Canvas-Image-Placeholder-comp.jpg?itok=P_o8p6L7"
+            alt="Instructure - Canvas">
+        </a>
+      </div>
+      <div class="contentDiv">
+        <div class="projectHeader">
+          <a class="pLink" href="https://github.com/sbolande/d2l-gradebook-csv-to-canvas-gradebook-csv#readme">
+            <div class="pName">Desire2Learn Gradebook CSV to Canvas Gradebook CSV</div>
+          </a><br>
+          <span class="pHours">30</span>&#xA0;hours,&#xA0;
+          <span class="pTimeframe">May 2019</span>
+        </div>
+        <div class="projectBody">
+          <p class="pDescription">
+            A puppeteer project that transformed a gradebook CSV from one Learning Management System to another and then
+            performed an automated upload. Work project for BYU-Idaho Student TechOps.
+          </p>
+        </div>
+        <div class="projectSkills">
+          <div class="pSkill"><a href="https://pptr.dev/">Puppeteer</a></div>
+          <div class="pSkill"><a href="https://www.npmjs.com/package/d3-dsv">d3-dsv</a></div>
+          <div class="pSkill"><a href="https://www.npmjs.com/package/canvas-api-wrapper">canvas-api-wrapper</a></div>
+          <div class="pSkill"><a href="https://github.com/sindresorhus/p-map">sindresorhus p-map</a></div>
+          <div class="pSkill">JavaScript/ES6</div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="project">
+      <div class="photoDiv">
+        <a class="pLink" href="https://sbolande.github.io/byui-wdd330/challenge02/index.html">
+          <img class="pPhoto" src="https://sbolande.github.io/byui-wdd330/challenge02/sbolande_mtg_search_app.PNG"
+            alt="sbolande MTG Search logo">
+        </a>
+      </div>
+      <div class="contentDiv">
+        <div class="projectHeader">
+          <a class="pLink" href="https://sbolande.github.io/byui-wdd330/challenge02/index.html">
+            <div class="pName">Magic: The Gathering Card Search - BYU-Idaho WDD330 Project</div>
+          </a><br>
+          <span class="pHours">10</span>&#xA0;hours,&#xA0;
+          <span class="pTimeframe">December 2020</span>
+        </div>
+        <div class="projectBody">
+          <p class="pDescription">
+            BYU-Idaho WDD313: Web Frontend Development II, Fall 2020. A web app using the mtgsdk API.
+          </p>
+        </div>
+        <div class="projectSkills">
+          <div class="pSkill"><a href="https://magicthegathering.io/">mtgsdk API</a></div>
+          <div class="pSkill">JavaScript/ES2019</div>
+          <div class="pSkill">HTML</div>
+          <div class="pSkill">CSS</div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="project">
+      <div class="photoDiv">
+        <a class="pLink" href="https://sbolande.github.io/byui-wdd330/challenge01/index.html">
+          <img class="pPhoto" src="https://sbolande.github.io/byui-wdd330/challenge01/sbolande_todo_app_logo.PNG"
+            alt="sbolande TODO logo">
+        </a>
+      </div>
+      <div class="contentDiv">
+        <div class="projectHeader">
+          <a class="pLink" href="https://sbolande.github.io/byui-wdd330/challenge01/index.html">
+            <div class="pName">TODO Application - BYU-Idaho WDD330 Project</div>
+          </a><br>
+          <span class="pHours">4</span>&#xA0;hours,&#xA0;
+          <span class="pTimeframe">December 2020</span>
+        </div>
+        <div class="projectBody">
+          <p class="pDescription">
+            BYU-Idaho WDD313: Web Frontend Development II, Fall 2020. A simple JavaScript TODO web app.
+          </p>
+        </div>
+        <div class="projectSkills">
+          <div class="pSkill">JavaScript/ES2019</div>
+          <div class="pSkill">HTML</div>
+          <div class="pSkill">CSS</div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <!-- END PROJECTS DIV -->
+  <!-- START END DIV -->
+  <div id="end"></div>
+  <!-- END END DIV -->
+
+
+  <footer>
+  </footer>
+</body><!-- END BODY -->
+
+</html>
