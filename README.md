@@ -1,2 +1,2 @@
 # Seth Bolander
-[My Profile](https://sbolande.github.io/profile.html)
+[Checkout my Portfolio here!](https://sbolande.github.io/profile.html)

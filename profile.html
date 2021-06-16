@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!-- Made with Portfolio Builder by sbolande and ajshiff -->
 <head>
   <title>Seth Bolander's Portfolio</title>
   <meta charset="UTF-8">
@@ -152,9 +152,40 @@
   <div id="projects" class="projects">
     <div class="project">
       <div class="photoDiv">
+        <a class="pLink">
+          <img class="pPhoto">
+        </a>
+      </div>
+      <div class="contentDiv">
+        <div class="projectHeader">
+          <a class="pLink" style="pointer-events: none;cursor: default;">
+            <div class="pName">Canvas API Wrapper</div>
+          </a><br>
+          <span class="pHours">300+</span>&#xA0;hours,&#xA0;
+          <span class="pTimeframe">December 2019 - Present</span>
+        </div>
+        <div class="projectBody">
+          <p class="pDescription">
+            BYU-Idaho had need of an API wrapper library to the Canvas LMS to enable other IT projects to save development time on connecting to the LMS.
+            This project alone has saved hundreds of hours and is always improving the experience of BYU-I IT personnel, students, and professors.
+            Created in C# using Newtonsoft and Refit for easy response serialization/deserialization.
+          </p>
+        </div>
+        <div class="projectSkills">
+          <div class="pSkill"><a href="https://reactiveui.github.io/refit/">Refit</a></div>
+          <div class="pSkill"><a href="https://www.newtonsoft.com/json">Json.NET &lt;Newtonsoft&gt;</a></div>
+          <div class="pSkill">C# 8.0</div>
+          <div class="pSkill"><a href="https://xunit.net/">xUnit</a></div>
+          <div class="pSkill"><a href="https://joshclose.github.io/CsvHelper/">CsvHelper</a></div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="project">
+      <div class="photoDiv">
         <a class="pLink" href="https://github.com/sbolande/canvas-token-fetcher#readme">
           <img class="pPhoto"
-            src="https://user-images.githubusercontent.com/10379601/29446482-04f7036a-841f-11e7-9872-91d1fc2ea683.png"
+            src="https://raw.githubusercontent.com/sbolande/canvas-token-fetcher/main/example.JPG"
             alt="Puppeteer">
         </a>
       </div>
@@ -168,8 +199,9 @@
         </div>
         <div class="projectBody">
           <p class="pDescription">
-            BYU-Idaho Hackathon Project Submission, Winter 2021. Fetch a new API token from Canvas&apos; admin login via
-            Puppeteer. Powered by Electron.
+            BYU-Idaho Hackathon Project Submission, Winter 2021. Allowed a developer to fetch a new API token 
+            from Canvas&apos; admin login since students were not allowed Oauth.
+            Powered by Electron, fetched by Puppeteer.
           </p>
         </div>
         <div class="projectSkills">
@@ -185,9 +217,7 @@
     <div class="project">
       <div class="photoDiv">
         <a class="pLink" href="https://github.com/sbolande/d2l-gradebook-csv-to-canvas-gradebook-csv#readme">
-          <img class="pPhoto"
-            src="https://www.instructure.com/sites/default/files/styles/small_hq/public/image/2021-02/Canvas-Image-Placeholder-comp.jpg?itok=P_o8p6L7"
-            alt="Instructure - Canvas">
+          
         </a>
       </div>
       <div class="contentDiv">
@@ -200,8 +230,9 @@
         </div>
         <div class="projectBody">
           <p class="pDescription">
-            A puppeteer project that transformed a gradebook CSV from one Learning Management System to another and then
-            performed an automated upload. Work project for BYU-Idaho Student TechOps.
+            A puppeteer project that transformed a gradebook CSV from one LMS &lt;D2L&gt; to another &lt;Canvas&gt; and then
+            performed an automated upload. Migrated over 3,000 students' grades, saving the department hundreds of hours.
+            Work project for BYU-Idaho Student TechOps.
           </p>
         </div>
         <div class="projectSkills">
@@ -232,6 +263,7 @@
         </div>
         <div class="projectBody">
           <p class="pDescription">
+            A small school project that would help someone search for Magic: The Gathering cards.
             BYU-Idaho WDD313: Web Engineering II, Fall 2020. A web app using the mtgsdk API, ExpressJs, and Heroku.
           </p>
         </div>
